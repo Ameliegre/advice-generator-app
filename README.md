@@ -19,6 +19,7 @@ Your users should be able to:
 
 - React - JS library
 - Tailwind Css - For styles
+- Axios
 - Eslint
 - Semantic HTML5 markup
 - Flexbox
