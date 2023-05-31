@@ -31,9 +31,7 @@ function App() {
       <p className="uppercase text-neon-green text-xs mt-6">
         advice #{quote.id}
       </p>
-      <p className="text-xl font-extrabold text-light-cyan mt-6 text-center">
-        {"quote.advice"}
-      </p>
+      <p className="text-xl font-extrabold text-light-cyan mt-6 text-center">&quot;{quote.advice}&quot;</p>
       <img src={patternD} alt='pattern' className='my-8'/>
       <button type="submit" onClick={handleClick} className='bg-neon-green p-3 rounded-full cursor-pointer absolute -bottom-4 
       shadow-lg shadow-rose-950'>
