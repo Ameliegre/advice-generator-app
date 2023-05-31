@@ -1,7 +1,8 @@
+import React from 'react';
 import patternD from './images/pattern-divider-desktop.svg'
 import iconBtn from './images/icon-dice.svg'
 import axios from 'axios'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function App() {
 
@@ -10,18 +11,20 @@ function App() {
   const getQuote = async () => {
     try {
       const response = await axios.get('https://api.adviceslip.com/advice');
-      console.log(response.data.slip);
       setQuote(response.data.slip)
     } catch (error) {
       console.error(error);
     }
   }
+
+  useEffect(()=>{
+    getQuote()
+  },[])
   
   const handleClick = () => {
     getQuote()
   }
 
-  
   return (
     <div className="container mx-auto w-96 max-h-fit px-6 bg-dark-grayish-blue rounded-xl shadow p-4 m-12 
       flex flex-col items-center relative mt-60 mobile:w-72">
@@ -29,7 +32,7 @@ function App() {
         advice #{quote.id}
       </p>
       <p className="text-xl font-extrabold text-light-cyan mt-6 text-center">
-        "{quote.advice}"
+        {"quote.advice"}
       </p>
       <img src={patternD} alt='pattern' className='my-8'/>
       <button type="submit" onClick={handleClick} className='bg-neon-green p-3 rounded-full cursor-pointer absolute -bottom-4 

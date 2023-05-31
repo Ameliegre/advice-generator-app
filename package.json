@@ -38,7 +38,22 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "eslint": "^8.41.0",
+    "eslint-plugin-react": "^7.32.2",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
-  }
+  },
+  "description": "This challenge is to build out this advice generator app and get it looking as close to the design as possible.",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ameliegre/advice-generator-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ameliegre/advice-generator-app/issues"
+  },
+  "homepage": "https://github.com/Ameliegre/advice-generator-app#readme"
 }
