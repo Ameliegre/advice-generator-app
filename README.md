@@ -29,7 +29,7 @@ Your users should be able to:
 Install age-calculator-app with npm
 
 ```bash
-  npm install age-calculator-app
+  npm install advice-generator-app
   cd src
   npm start
 ```

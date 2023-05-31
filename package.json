@@ -1,5 +1,6 @@
 {
   "name": "advice-generator-app",
+  "homepage": "http://Ameliegre.github.io/Advice-generator-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,6 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -40,6 +43,7 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.41.0",
     "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
   },
@@ -54,6 +58,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ameliegre/advice-generator-app/issues"
-  },
-  "homepage": "https://github.com/Ameliegre/advice-generator-app#readme"
+  }
 }
