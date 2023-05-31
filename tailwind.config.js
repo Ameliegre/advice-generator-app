@@ -2,6 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontFamily:{
+      sans: ['Manrope', 'sans-serif'],
+    },
+    screens:{
+      'mobile': {'max':'425px'},
+    },
     colors: {
       'light-cyan': 'hsl(193, 38%, 86%)',
       'neon-green': 'hsl(150, 100%, 66%)',

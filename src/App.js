@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 function App() {
 
-  const [quote , setQuote] = useState('')
+  const [quote, setQuote] = useState('')
 
   const getQuote = async () => {
     try {
@@ -23,16 +23,17 @@ function App() {
 
   
   return (
-    <div className="container mx-auto w-2/5 h-60 px-6 bg-dark-grayish-blue rounded-xl shadow border p-4 m-12 
-      flex flex-col items-center relative">
+    <div className="container mx-auto w-96 max-h-fit px-6 bg-dark-grayish-blue rounded-xl shadow p-4 m-12 
+      flex flex-col items-center relative mt-60 mobile:w-72">
       <p className="uppercase text-neon-green text-xs mt-6">
         advice #{quote.id}
       </p>
-      <p className="text-xl font-extrabold text-light-cyan mt-6">
+      <p className="text-xl font-extrabold text-light-cyan mt-6 text-center">
         "{quote.advice}"
       </p>
-      <img src={patternD} alt='pattern' className='mt-6'/>
-      <button type="submit" onClick={handleClick} className='bg-neon-green p-3 rounded-full cursor-pointer absolute bottom-0 hover:shadow-2xl hover:bg-red-600 hover:ease-in-out'>
+      <img src={patternD} alt='pattern' className='my-8'/>
+      <button type="submit" onClick={handleClick} className='bg-neon-green p-3 rounded-full cursor-pointer absolute -bottom-4 
+      shadow-lg shadow-rose-950'>
         <img src={iconBtn} alt='icon' className='h-4'/>
       </button>
   </div>
