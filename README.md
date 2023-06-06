@@ -39,6 +39,6 @@ Install age-calculator-app with npm
 
 During this project : 
 
-- I learned how to apply styled components
-- I understood better how to use react event handlers with many conditions 
-- I also praticed conditionnal rendering with differents errors
+- I learned how to use tailwind CSS
+- I understood better how to do some call with a publi api 
+- I also praticed conditionnal rendering 
